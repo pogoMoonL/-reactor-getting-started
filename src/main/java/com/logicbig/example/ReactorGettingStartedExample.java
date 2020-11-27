@@ -10,7 +10,8 @@ public class ReactorGettingStartedExample {
         mono.subscribe(System.out::println);
 
         System.out.println("-- Flux example --");
-        Flux<Integer> flux = Flux.just(1, 2, 3);
-        flux.subscribe(System.out::println);
+
+        Flux.just(1, 2, 3)
+                .subscribe(System.out::println);
     }
 }
